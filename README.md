@@ -8,6 +8,9 @@ This project implements a model predictive controller that allows a car to navig
 In order to model the motion of the car I have used a kinematic model which include car's velocity(v), position in x and y and orientation(psi). Also the cross track error(cte) and the orintation error(epsi) are included in the state of the vehicle. The actuations of the car are acceleration(a) and steering(delta). The state of the car is updated based on following equations:
 
 
+<img src="https://github.com/manujshinkar/Model-Predictive-Controller/kinematic.png" width="200" height="200" />
+
+
 
 For tuning N and dt I started with a 3 seconds look ahead so I assumed N as 10 and dt as 0.3. This was making the car go out of the track. Keeping N at 10 I started reducing dt and found a good solution at dt = 0.1. The track has very big turns so looking ahead more than 1 sec is making the car unstable.
 
