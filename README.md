@@ -8,7 +8,7 @@ This project implements a model predictive controller that allows a car to navig
 In order to model the motion of the car I have used a kinematic model which include car's velocity(v), position in x and y and orientation(psi). Also the cross track error(cte) and the orintation error(epsi) are included in the state of the vehicle. The actuations of the car are acceleration(a) and steering(delta). The state of the car is updated based on following equations:
 
 
-<img src="kinematic.png" width="200" height="200" />
+<img src="kinematic.png" width="400" height="300" />
 
 
 
